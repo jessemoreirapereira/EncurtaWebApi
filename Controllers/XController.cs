@@ -27,6 +27,7 @@ namespace EncurtaWebApi.Controllers
         {
             MemoryCache.TryGetValue(chaveCache, out Dictionary<string, string> ListaEncurados);
             return ListaEncurados;
+            
         }
 
         [HttpGet("{value}")]
